@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Insert Quarantine</title>
+        <link rel="stylesheet" href="adstyles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>
+
+    <body class="bda">
+        <div class="bar">
+			<h3 class="head">Welcome <span>  Admin</span></h3><br><br>
+            <img src="profiledash.png" alt="profile" 
+			    style="width: 50%; position: relative; height: 20%; object-fit: contain;left: 20%;"/>
+                <br><br><br>
+            <a href="advac.php" class="sidetxt"><i class='fas fa-syringe' style='font-size:20px;color:white'></i>
+                <span>Vaccines</span></a><br><br><br>
+            <a href="advcntd.php" class="sidetxt"><i class='fas fa-band-aid' style='font-size:20px;color: white;'></i></i>
+                <span>Vaccinated</span></a><br><br><br>
+            <a href="adqua.php" class="sidetxt"><i class="fa fa-hospital-o" style="font-size:20px;color: white;"></i>
+                <span>Quarantines</span></a><br><br><br>
+            <a href="doc.php" class="sidetxt"><i class='fas fa-heart' style='font-size:20px;color: white;'></i>
+                <span>Doctors</span></a><br><br><br>
+            <a href="aduserregs.php" class="sidetxt"><i class="material-icons" style="font-size:20px;color:white;">cloud</i>
+                <span>Registrations</span></a><br><br><br>
+            <a href="#" class="sidetxt"><i class="fa fa-quote-left" style="font-size:20px;color: white;"></i>
+                <span>Write us</span></a><br><br><br>
+            <a href="logout.php" class="sidetxt"><i class="fa fa-sign-out" style="font-size:20px;color:white;"></i>
+                <span>Logout</span></a>
+
+            <div class="content">
+                <form action="insertqua.php" method="post">
+                <table>
+                    <tr>
+                        <th>Location Name</th>
+                        <td><input type="text" class="input-field" name="locname" required /> </td>
+                    </tr>
+                    <tr>
+                        <th>Location ID</th>
+                        <td><input type="text" class="input-field" name="locid" required /> </td>
+                    </tr>
+                    <tr>
+                        <th>From Date</th>
+                        <td><input type="date" id="datetimepickerDemo" class="input-field" name="fdate" required /> </td>
+                    </tr>
+                    <tr>
+                        <th>To Date</th>
+                        <td><input type="date" id="datetimepickerDemo2" class="input-field" name="tdate" /> </td>
+                    </tr>
+                </table><br>
+                <div>
+                    <button type="submit" style="width: 30%; padding-top: 10px;padding-bottom:10px;
+                    cursor: pointer;
+                    display: block;
+                    font-size: large;
+                    font-weight: bold;
+                    font-style: oblique;
+                    background: lightskyblue;
+                    text-align: center;
+                    display: inline-block">
+                    Add</button></a>
+                </form>
+                    <a href="insertqua.html"><button type="submit" style="width: 30%; padding-top: 10px;padding-bottom:10px;
+                        cursor: pointer;
+                        display: block;
+                        font-size: large;
+                        font-weight: bold;
+                        font-style: oblique;
+                        background: lightskyblue;
+                        text-align: center;
+                        display: inline-block">
+                        Refresh</button></a>
+                </div>
+        </div>
+        <script>
+            $(function(){
+                var dtToday = new Date();
+                
+                var month = dtToday.getMonth() + 1;
+                var day = dtToday.getDate();
+                var year = dtToday.getFullYear();
+                if(month < 10)
+                    month = '0' + month.toString();
+                if(day < 10)
+                    day = '0' + day.toString();
+                
+                var minDate= year + '-' + month + '-' + day;
+                
+                $('#datetimepickerDemo').attr('min', minDate);
+                $('#datetimepickerDemo2').attr('min', minDate);
+            });
+        </script>
+    </body>

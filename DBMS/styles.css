@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+	box-sizing: border-box;
+}
+
+.head{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-style: oblique;
+	position: relative;
+	top: 200px;
+	padding-left: 450px;
+}
+
+body{
+	justify-content: center;
+	align-items: center; 
+	position: sticky;
+	min-width: fit-content;
+	min-height: fit-content;	
+}
+.bdi{
+	background-image: url("index.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: auto;
+	object-fit: cover;
+}
+
+/*----------------------------------------Register and Login------------------------------------------------------*/
+.btn{
+    position: relative;
+    text-align: center;
+	cursor: pointer;
+	display: block;
+    left: 65%;
+    background-color: rgb(24, 21, 39);
+	margin:  auto;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.btnanime {
+	display: inline-block;
+	position: relative;
+	color: rgb(0, 191, 255);
+}
+
+.btnanime:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: rgb(0, 191, 255);
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+  
+.btnanime:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+.txt{
+    position: relative;
+    text-align: center;
+    top: 20px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.form{
+	bottom: 80px;
+	width: 400px;
+	height: 600px auto;
+	position:  relative;
+	margin: 8% auto;
+	background: #FFF;
+	padding: 10px;
+	overflow: hidden;
+    border-left: 5px solid white;
+	border-top: 5px solid white;
+	border-right: 5px solid white;
+	border-bottom: 5px solid white;
+    border-radius: 10px;
+
+	background-image: url("images/cloves.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.forma{
+	bottom: 80px;
+	width: 400px;
+	height: 600px auto;
+	position:  relative;
+	margin: 8% auto;
+	background: #FFF;
+	padding: 10px;
+	overflow: hidden;
+    border-left: 5px solid black;
+	border-top: 5px solid black;
+	border-right: 5px solid black;
+	border-bottom: 5px solid black;
+    border-radius: 10px;
+
+	background-image: url("images/window.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-x: center;
+}
+
+.bd{
+	background-image: url("images/log.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bda{
+	background-image: url("images/lora.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.input-field {
+	color: black;
+	font-family: serif;
+    font-size: initial;
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+
+.input-num{
+	font-family: sans-serif;
+    font-size: initial;
+}
+
+.check-box {
+	margin: 30px 10px 30px 0;
+}
+.submit-btn {
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin:  auto;
+	font-weight: bold;
+	font-style: oblique;
+	background: linear-gradient(to right, #e96b95, #ffad06);
+	border-radius: 30px;
+}
+
+/*------------------------------------------------drop down--------------------------------------------*/
+
+.navbar{
+	overflow: hidden;
+	background-color: transparent;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a{
+	float: left;
+	font-size: 20px;
+	color: transparent;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: transform .2s;
+	margin: 0 auto;
+}
+
+.dropdown {
+	float: none;
+	overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	background-color: inherit;
+	color: black;
+	padding: 14px 16px;
+	position: absolute;
+	font-size: 20px;
+	font-family: inherit;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	margin: 0;
+  }
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+	background-color: none;
+	-ms-transform: scale(1.2); 
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2); 	
+}
+
+.dropdown-content {
+	top: 50px;
+	display: none;
+	position: absolute;
+	background-color: rgb(4, 219, 247);
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 20px 12px;
+	text-decoration: none;
+	font-style: normal;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	transform: scale(1.0);
+	background-color: #ddd
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+  
+.navbaranime {
+	display: inline-block;
+	position: relative;
+}
+
+.navbaranime:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: rgb(24, 21, 39);
+	transform-origin: bottom left;
+	transition: transform 0.25s ease-out;
+}
+  
+.navbaranime:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom right;
+}
+
+.indextxt{
+	position: absolute;
+	font-size: x-large;
+	top: 150px;
+	left: 50%;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	text-shadow: 3px 5px 5px white;
+}
+
+/*-------------------------------------------headers----------------------------------------------------------*/
+
+.h1{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-style: normal;
+	position: relative;
+	top: 350px;
+	margin: auto;
+	right: 30%;
+	width: fit-content;
+	height: fit-content;
+}
+
+.h2{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-style: normal;
+	position: relative;
+	top: 280px;
+	margin: auto;
+	right: 0%;
+	width: fit-content;
+	height: fit-content;
+}
+
+.h3{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-style: normal;
+	position: relative;
+	top: 210px;
+	margin: auto;
+	left: 30%;
+	width: fit-content;
+	height: fit-content;
+}
+
+.h4{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-style: normal;
+	position: relative;
+	top: 270px;
+	margin: auto;
+	right: 15%;
+	width: fit-content;
+	height: fit-content;
+}
+
+.h5{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-style: normal;
+	position: relative;
+	top: 185px;
+	margin: auto;
+	left: 15%;
+	width: fit-content;
+	height: fit-content;
+}
+
+.h1:hover, .h2:hover, .h3:hover, .h4:hover, .h5:hover{
+	background-color: none ;
+	border-style: outset;
+	border-radius: 5px 50px 30px 5px;
+	-ms-transform: scale(1.2); 
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2); 	
+	box-shadow: 5px 5px 5px blue;
+}
+
+/*------------------------------------------------About Us-----------------------------------------------------------*/
+
+.abt{
+	position: relative;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-style: normal;
+	left: 30%;
+	width: fit-content;
+	height: fit-content;
+}
+
+.bdabt{
+	background-image: url("images/about.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hospital Registration</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body class="bda">
+        <div class="forma">
+            <img src="./images/profile.png" class="img" alt="profile" 
+                style="width: 40%; position: relative; height: 40%;object-fit: contain; left: 30%;">
+            <form action="hregister.php" method="post" class="input-group">
+				<input name="hname" type="text" class="input-field" placeholder="Hospital Name" required />
+				<input name="hid" type="text" class="input-field" placeholder="Hospital ID" pattern="[0-9]{5}" maxlength="5" required/>
+				<input name="hphone" type="text" class="input-field" placeholder="Hospital Phone Number" pattern="[6-9][0-9]{9}" maxlength="10" required/>
+                <input name="password" type="password" class="input-field" placeholder="Password" minlength="8" required />
+                <input name="cpassword"type="password" class="input-field" placeholder="Confirm Password" required />
+                <br><br>
+				<input type="checkbox" class="check-box" required/><span>I agree to the <a href="#">terms & conditions</a></span>
+				<button type="submit" class="submit-btn">Register</button>
+			</form>
+            <p class="txt">Already have an account?<br>
+                <a href="hospitallog.html">
+                    Click here to LogIn
+                    <br><br><br>
+                </a>
+                <a href="index.html">
+                    <button 
+                    style="width: 40%;
+                    height: 40%;
+                    background: linear-gradient(to right, #f8dcdc, #69a8e7);
+                    cursor: pointer;
+                    display: block;
+                    margin:  auto;
+                    font-weight: bold;
+                    font-style: oblique;
+                    border-radius: 30px;
+                    display: inline_block;">
+                    Back</button>
+                    <br>
+                </a>
+            </p>
+        </div>
+    </body>
+</html>

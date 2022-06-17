@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Insert Vaccines</title>
+        <link rel="stylesheet" href="adstyles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+
+    <body class="bda">
+        <div class="bar">
+			<h3 class="head">Welcome <span>  User</span></h3><br><br>
+            <img src="profiledash.png" alt="profile" 
+			    style="width: 50%; position: relative; height: 20%; object-fit: contain;left: 20%;"/>
+                <br><br><br>
+            <a href="admindash.php" class="sidetxt"><i class="fa fa-dashboard" style="font: size 20px; color: white;"></i>
+                <span>Dashboard</span></a><br><br><br>
+            <a href="advac.php" class="sidetxt"><i class='fas fa-syringe' style='font-size:20px;color:white'></i>
+                <span>Vaccines</span></a><br><br><br>
+            <a href="advcntd.php" class="sidetxt"><i class='fas fa-band-aid' style='font-size:20px;color: white;'></i></i>
+                <span>Vaccinated</span></a><br><br><br>
+            <a href="adqua.php" class="sidetxt"><i class="fa fa-hospital-o" style="font-size:20px;color: white;"></i>
+                <span>Quarantines</span></a><br><br><br>
+            <a href="doc.php" class="sidetxt"><i class='fas fa-heart' style='font-size:20px;color: white;'></i>
+                <span>Doctors</span></a><br><br><br>
+            <a href="aduserregs.php" class="sidetxt"><i class="material-icons" style="font-size:20px;color:white;">cloud</i>
+                <span>Registrations</span></a><br><br><br>
+            <a href="#" class="sidetxt"><i class="fa fa-quote-left" style="font-size:20px;color: white;"></i>
+                <span>Write us</span></a><br><br><br>
+            <a href="logout.php" class="sidetxt"><i class="fa fa-sign-out" style="font-size:20px;color:white;"></i>
+                <span>Logout</span></a>
+
+            <div class="content">
+                <form action="upadpass.php" method="post">
+                <table>
+                    <tr>
+                        <th>Old Password</th>
+                        <td><input type="password" class="input-field" name="opass" minlength="8" required /> </td>
+                    </tr>
+                    <tr>
+                        <th>New Password</th>
+                        <td><input type="password" class="input-field" name="npass" minlength="8" required /> </td>
+                    </tr>
+                    <tr>
+                        <th>Confirm Password</th>
+                        <td><input type="password" class="input-field" name="cpass" minlength="8" required /> </td>
+                    </tr>
+                </table>
+                <br>
+                <div>
+                    <button type="submit" style="width: 30%; padding-top: 10px;padding-bottom:10px;
+                    cursor: pointer;
+                    display: block;
+                    font-size: large;
+                    font-weight: bold;
+                    font-style: oblique;
+                    background: lightskyblue;
+                    text-align: center;
+                    display: inline-block">
+                    Update</button></a>
+                </div>
+                </form>
+        </div>
+    </body>

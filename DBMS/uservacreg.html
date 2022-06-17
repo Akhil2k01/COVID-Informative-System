@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Vaccine Registration</title>
+        <link rel="stylesheet" href="ustyles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+
+    <body class="bda">
+        <div class="bar">
+            <h3 class="head">Welcome <span>  User</span></h3><br><br>
+            <img src="userdash.png" alt="profile" 
+                style="width: 50%; position: relative; height: 20%; object-fit: contain;left: 20%;"/>
+                <br><br><br>
+            <a href="userdash.php" class="sidetxt"><i class="fa fa-dashboard" style="font: size 20px; color: white;"></i>
+                <span>Dashboard</span></a><br><br><br>
+            <a href="userqua.html" class="sidetxt"><i class="fa fa-hospital-o" style="font-size:20px;color: white;"></i>
+                <span>Quarantines</span></a><br><br><br>
+            <a href="userregs.php" class="sidetxt"><i class="material-icons" style="font-size:20px;color:white;">cloud</i>
+                <span>My Registrations</span></a><br><br><br>
+            <a href="udoc.php" class="sidetxt"><i class='fas fa-heart' style='font-size:20px;color: white;'></i>
+                <span>Doctors</span></a><br><br><br>
+            <a href="#" class="sidetxt"><i class="fa fa-hashtag" style="font-size:20px;color: white;"></i>
+                <span>Helpline</span></a><br><br><br>
+            <a href="#" class="sidetxt"><i class="fa fa-quote-left" style="font-size:20px;color: white;"></i>
+                <span>Helpdesk</span></a><br><br><br>
+            <a href="logout.php" class="sidetxt"><i class="fa fa-sign-out" style="font-size:20px;color:white;"></i>
+                <span>Logout</span></a>
+
+            <div class="content">
+                <form action="uservacreg.php" method="post">
+                <table>
+                    <tr>
+                        <th>Adhar Number</th>
+                        <td><input type="text" class="input-field" name="adhar" pattern="[1-9][0-9]{11}" minlength="12" maxlength="12" required /> </td>
+                    </tr>
+                    <tr>
+                        <th>Vaccination Type</th>
+                        <td><input list="list" name="vname" class="input-field" required />
+                            <datalist id="list">
+                                <option value="COVISHIELD"></option>
+                                <option value="COVACCINE"></option>
+                            </datalist> </td>
+                    </tr>
+                    <tr>
+                        <th>Vaccination Dose</th>
+                        <td><input list="list1" name="vdose" class="input-field" required />
+                            <datalist id="list1">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                            </datalist> </td>
+                    </tr>
+                    <tr>
+                        <th>Location Name</th>
+                        <td><input type="text" class="input-field" name="locname" required /> </td>
+                    </tr>
+                </table><br>
+                <div>
+                    <button type="submit" style="width: 30%; padding-top: 10px;padding-bottom:10px;
+                    cursor: pointer;
+                    display: block;
+                    font-size: large;
+                    font-weight: bold;
+                    font-style: oblique;
+                    background: lightskyblue;
+                    text-align: center;
+                    display: inline-block">
+                    Register</button></a>
+                </form>
+            </div>
+            <br><br>
+            <div>
+            <a href="uservacreg.html"><button type="submit" style="width: 30%; padding-top: 10px;padding-bottom:10px;
+                cursor: pointer;
+                display: block;
+                font-size: large;
+                font-weight: bold;
+                font-style: oblique;
+                background: lightskyblue;
+                text-align: center;
+                display: inline-block">
+                Refresh</button></a>
+            <a href="uservac.php"><button type="submit" style="width: 30%; padding-top: 10px;padding-bottom:10px;
+                cursor: pointer;
+                display: block;
+                font-size: large;
+                font-weight: bold;
+                font-style: oblique;
+                background: lightskyblue;
+                text-align: center;
+                display: inline-block">
+                Back</button></a>
+            </div>
+        </div>
+    </body>

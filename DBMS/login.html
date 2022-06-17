@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body class="bd">
+        <div class="navbar">
+            <a href="index.html" style="color: black;"><p class="navbaranime">Home</p></a>
+            <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/media-resources/news" 
+            style="color: black;"><p class="navbaranime">News</p></a>
+        </div>
+        <div class="form">
+            <img src="./images/profile.png" class="img" alt="profile" 
+                style="width: 40%; position: relative; height: 40%;object-fit: contain; left: 30%;">
+            <form class="input-group" action="ulogin.php" method="post">
+				<input name="adhar" type="text" class="input-field" placeholder="Adhar Number" required />
+				<input name="password" type="password" class="input-field" placeholder="Password" minlength="8" required />
+				<input type="checkbox" class="check-box" /><span>Remember Password</span>
+				<button type="submit" class="submit-btn">Log In</button>
+			</form>
+            <p class="txt">Don't have an account?<br>
+                <a href="register.html">
+                    Click here to register
+                </a>
+            </p>
+            <br>
+        </div>
+    </body>
+</html>

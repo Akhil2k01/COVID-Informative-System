@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hospital Login</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body class="bda">
+        <div class="forma">
+            <img src="./images/adminprofile.png" class="img" alt="profile" 
+                style="width: 40%; position: relative; height: 40%;object-fit: contain; left: 30%;">
+            <form class="input-group" action="hospitallog.php" method="post">
+                <input name="hos" type="text" class="input-field" placeholder="Hospital id" required />
+				<input name="password" type="password" class="input-field" placeholder="Password" minlength="8" required />
+				<input type="checkbox" class="check-box" /><span>Remember Password</span>
+				<button type="submit" class="submit-btn">Log In</button>
+			</form>
+            <br><br>
+            <p>
+                <a href="index.html">
+                    <button 
+                    style="width: 40%;
+                    height: 40%;
+                    background: linear-gradient(to right, #f8dcdc, #69a8e7);cursor: pointer;
+                    display: block;
+                    margin:  auto;
+                    font-weight: bold;
+                    font-style: oblique;
+                    border-radius: 30px;
+                    display: inline_block;">
+                    Back</button>
+                    <br>
+                </a>
+            </p>
+        </div>
+    </body>
+</html>

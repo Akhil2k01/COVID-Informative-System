@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Register</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body class="bd">
+        <div class="navbar">
+            <a href="index.html" style="color: black;"><p class="navbaranime">Home</p></a>
+            <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/media-resources/news" 
+            style="color: black;"><p class="navbaranime">News</p></a>
+        </div>
+        <div class="form">
+            <img src="./images/profile.png" class="img" alt="profile" 
+                style="width: 40%; position: relative; height: 40%;object-fit: contain; left: 30%;">
+            <form action="uregister.php" method="post" class="input-group" >
+				<input type="text" class="input-field" placeholder="Name" name="usr_name" required />
+				<input type="text" class="input-field" placeholder="Adhar Number" name="usr_adhar" pattern="[1-9][0-9]{11}" minlength="12" maxlength="12" required/>
+				<input type="text" class="input-field" placeholder="Phone Number" name="usr_phone" pattern="[6-9][0-9]{9}" minlength="10" maxlength="10" required/>
+                <input type="password" class="input-field" placeholder="Password" name="usr_password" minlength="8" required />
+                <input type="password" class="input-field" placeholder="Confirm Password" name="usr_confirm_password" minlength="8" required />
+                <br><br>
+				<input type="checkbox" class="check-box" required/><span>I agree to the <a href="#">terms & conditions</a></span>
+				<button type="submit" class="submit-btn">Register</button>
+			</form>
+            <p class="txt">Already have an account?<br>
+                <a href="login.html">
+                    Click here to LogIn
+                </a>
+            </p>
+            <br>
+        </div>
+    </body>
+</html>
